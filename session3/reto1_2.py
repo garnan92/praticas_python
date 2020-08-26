@@ -7,6 +7,6 @@ def agenda(**personas):
 
 def main():
 
-    agenda(wham="45458974578945",ricardo="12871237819",zack="189789273",armando="1782937193",benito="390478203748",mary="893791278389")
+    agenda(wham="45458974578945",ricardo="12871237819",zack="189789273",armando="1782937193",benito="390478203748",jojo="89675609",mary="893791278389")
 
 main()
