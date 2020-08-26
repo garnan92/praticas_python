@@ -1,4 +1,7 @@
+"""Codigo de numeraciones"""
+
 def numericos(operacion,*numeros):
+    """del metodo numericos acepta + o - como primer parametro y como segundo parametro una susecion de numeros"""
     result = 0
     a = 0
     for i in numeros:
@@ -17,4 +20,4 @@ def main():
 
     numericos("*",5,4)
 
-main()
+# main()
