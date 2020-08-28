@@ -1,0 +1,78 @@
+queries basicas
+
+
+CREATE TABLE `ajj94e4hhypxwzhh`.`prueba1` (
+  `idprueba1` INT NOT NULL,
+  `nombre` VARCHAR(45) NULL,
+  PRIMARY KEY (`idprueba1`));
+
+
+DROP TABLE `ajj94e4hhypxwzhh`.`prueba1`;
+
+
+
+CREATE TABLE `ajj94e4hhypxwzhh`.`prueba` (
+  `idprueba` INT NOT NULL,
+  `pruebacol` VARCHAR(45) NULL,
+  `pruebacol1` VARCHAR(45) NULL,
+  PRIMARY KEY (`idprueba`));
+
+
+
+select table_name from information_schema.tables;
+
+
+select * from information_schema.columns where table_name like "prueba"
+
+select * from information_schema.columns where table_schema like "ajj94e4hhypxwzhh"
+
+
+
+USE `ajj94e4hhypxwzhh`;
+DROP procedure IF EXISTS `new_procedure`;
+
+DELIMITER $$
+USE `ajj94e4hhypxwzhh`$$
+$$
+
+DELIMITER ;
+
+
+-----------------------------------------------------------------------------
+
+
+select * from prueba
+
+select table_name from information_schema.tables;
+
+select * from information_schema.columns where table_name like "prueba"
+
+select * from information_schema.columns where table_schema like "ajj94e4hhypxwzhh"
+
+select * from information_schema.routines where routine_type like "procedure" 
+
+
+
+USE `ajj94e4hhypxwzhh`;
+DROP procedure IF EXISTS `new_procedure2`;
+
+DELIMITER $$
+USE `ajj94e4hhypxwzhh`$$
+CREATE PROCEDURE `new_procedure2` ()
+BEGIN
+
+	select * from prueba;
+
+END$$
+
+DELIMITER ;
+
+
+
+------------------------
+BEGIN
+
+	select * from prueba;
+
+END
+----------------------
