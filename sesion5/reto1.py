@@ -1,50 +1,63 @@
 class vehiculo:
     def __init__(self,modelo:str,velocidad:int,llantas:int,color:str,tipo:str=""):
-        self.__modelo = modelo
-        self.__velocidad = velocidad
-        self.__llantas = llantas
-        self.__color = color
-        self.__tipo = tipo
+        self.modelo = modelo
+        self.velocidad = velocidad
+        self.llantas = llantas
+        self.color = color
+        self.tipo = tipo
     
     def __str__(self):
-        return "el {4} {0} viaja a {1} km, tiene {2} llantas y es de color {3}".format(self.__modelo,self.__velocidad,self.__llantas,self.__color,self.__tipo)
+        return "el {4} {0} viaja a {1} km, tiene {2} llantas y es de color {3}".format(self.modelo,self.velocidad,self.llantas,self.color,self.tipo)
 
     def __del__(self):
         pass
     
     def avanza(self):
-        print( "el {2} {0} avanza a {1} km/h".format(self.__modelo,self.__velocidad,self.__tipo) )
+        # print( "el {2} {0} avanza a {1} km/h".format(self.__modelo,self.__velocidad,self.__tipo) )
+        pass
 
     def getTipo(self):
-        return self.__tipo
+        return self.tipo
 
 
 class avion(vehiculo):
 
     def __init__(self,modelo:str,velocidad:int,llantas:int,color:str,altura:int):
         super().__init__(modelo,velocidad,llantas,color,"avion")
-        self.__altura = altura
+        self.altura = altura
 
     def vuela(self):
-        print("el avion puede volar a una altitud de {0} pies".format(self.__altura))
+        print("el avion puede volar a una altitud de {0} pies".format(self.altura))
+
+    def avanza(self):
+        print( "el avion {0} avanza a {1} km/h y vuela alto ".format(self.modelo,self.velocidad) )
+        # print("el avion vuela")
 
 class carro(vehiculo):
 
     def __init__(self,modelo:str,velocidad:int,llantas:int,color:str,anio:int):
         super().__init__(modelo,velocidad,llantas,color,"carro")
-        self.__anio = anio
+        self.anio = anio
 
     def modelaje(self):
-        print("el carro es del año {0}".format(self.__anio))
+        print("el carro es del año {0}".format(self.anio))
+
+    def avanza(self):
+        print( "el carro {0} avanza a {1} km/h y es un auto rapido ".format(self.modelo,self.velocidad) )
+        # print("el carro corre")
 
 class barco(vehiculo):
 
     def __init__(self,modelo:str,velocidad:int,llantas:int,color:str,capacidad:int):
         super().__init__(modelo,velocidad,llantas,color,"barco")
-        self.__capacidad = capacidad
+        self.capacidad = capacidad
 
     def Capacidad(self):
-        print("es un barco que puede abarcar {0} personas".format(self.__capacidad))
+        print("es un barco que puede abarcar {0} personas".format(self.capacidad))
+
+    def avanza(self):
+        print( "el barco {0} avanza a {1} millas nauticas y no se unde ".format(self.modelo,self.velocidad) )
+        # print("el barco sarpa")
 
 def main():
 

@@ -1,0 +1,36 @@
+queries prosgres
+
+nombre_base = 'd59u2pbf86uvet'
+
+nombre_tabla
+
+select * from information_schema.tables where table_catalog like nombre_base and table_schema like 'public';
+
+select * from information_schema.tables where table_catalog like 'd59u2pbf86uvet' and table_schema like 'public' and table_name like 'pruebapg'
+
+CREATE OR REPLACE PROCEDURE public.llamar_pruebapg(IN id_in integer DEFAULT NULL::integer, IN nombre_in character DEFAULT  NULL::bpchar)  
+AS $BODY$
+
+select * from pruebapg where id = id_in
+
+$BODY$ LANGUAGE sql;
+
+-- FUNCTION: public.llamar_pruebapg(integer, character)
+
+-- DROP FUNCTION public.llamar_pruebapg(integer, character);
+
+CREATE OR REPLACE FUNCTION public.llamar_pruebapg(
+	id_in integer DEFAULT NULL::integer,
+	nombre character DEFAULT NULL::bpchar)
+    RETURNS pruebapg
+    LANGUAGE 'sql'
+
+    COST 100
+    VOLATILE 
+    
+AS $BODY$
+select * from pruebapg where id = id_in
+$BODY$;
+
+ALTER FUNCTION public.llamar_pruebapg(integer, character)
+    OWNER TO ddaedpulvjllah;
