@@ -1,0 +1,79 @@
+{
+    "lista": [
+        {
+            "nombre": "session3",
+            "tamanio": 256,
+            "fecha": "Tue Aug 25 21:38:53 2020"
+        },
+        {
+            "nombre": "session2",
+            "tamanio": 256,
+            "fecha": "Tue Aug 25 13:59:03 2020"
+        },
+        {
+            "nombre": "queries prosgres.txt",
+            "tamanio": 998,
+            "fecha": "Sat Aug 29 12:47:39 2020"
+        },
+        {
+            "nombre": "queries.txt",
+            "tamanio": 1368,
+            "fecha": "Thu Aug 27 19:20:00 2020"
+        },
+        {
+            "nombre": "fodler.json",
+            "tamanio": 0,
+            "fecha": "Thu Sep  3 21:09:50 2020"
+        },
+        {
+            "nombre": "ejemplo2.csv",
+            "tamanio": 35,
+            "fecha": "Thu Sep  3 20:30:48 2020"
+        },
+        {
+            "nombre": "sesion6",
+            "tamanio": 256,
+            "fecha": "Thu Sep  3 19:06:20 2020"
+        },
+        {
+            "nombre": "ejemplo.csv",
+            "tamanio": 34,
+            "fecha": "Thu Sep  3 19:59:52 2020"
+        },
+        {
+            "nombre": "README.md",
+            "tamanio": 25,
+            "fecha": "Tue Aug 25 13:58:58 2020"
+        },
+        {
+            "nombre": "session1",
+            "tamanio": 320,
+            "fecha": "Tue Aug 25 13:59:03 2020"
+        },
+        {
+            "nombre": "sesion4",
+            "tamanio": 128,
+            "fecha": "Thu Aug 27 19:27:08 2020"
+        },
+        {
+            "nombre": "sesion5",
+            "tamanio": 160,
+            "fecha": "Tue Sep  1 19:07:25 2020"
+        },
+        {
+            "nombre": ".git",
+            "tamanio": 416,
+            "fecha": "Tue Aug 25 13:59:03 2020"
+        },
+        {
+            "nombre": "autos.txt",
+            "tamanio": 148,
+            "fecha": "Thu Sep  3 19:45:14 2020"
+        },
+        {
+            "nombre": "ejemplow.txt",
+            "tamanio": 32,
+            "fecha": "Thu Sep  3 19:20:33 2020"
+        }
+    ]
+}

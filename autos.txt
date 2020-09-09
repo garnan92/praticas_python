@@ -1,0 +1,1 @@
+[{"modelo": "bitrus", "anio": "207", "marca": "wolfvagen", "color": "azul"},{"modelo": "mazda3", "anio": "2018", "marca": "mazda", "color": "rojo"}]

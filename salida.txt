@@ -1,0 +1,4 @@
+Nombre = Ricardo, Edad = 27, Ciudad = tab
+Nombre = Jeremy, Edad = 12, Ciudad = ohaio
+Nombre = oruga, Edad = 15, Ciudad = cdmx
+Nombre = marcus, Edad = 14, Ciudad = tampioc
