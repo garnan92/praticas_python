@@ -12,6 +12,9 @@ print (type(b))
 print (type(c))
 print(type(d))
 
+if type(b) == str:
+    print("es un string")
+
 print("hola ke hace")
 
 
